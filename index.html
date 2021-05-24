@@ -58,7 +58,7 @@
             <!-- Баннер -->
             <section class="banner">
                 <h1 class="banner-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br />ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-                <button type="button" class="buttons banner-button">Заказать услугу</button>
+                <button data-modal-open type="button" class="buttons banner-button">Заказать услугу</button>
             </section>
 
             <!-- Особенности -->
@@ -110,9 +110,24 @@
                 <div class="container">
                     <h2 class="section-title">Чем мы занимаемся</h2>
                     <ul class="img-work list">
-                        <li class="item"><img src="./images/img.jpg" alt="Компьютер" width="370" height="294"></li>
-                        <li class="item"><img src="./images/img2.jpg" alt="Телефон" width="370" height="294"></li>
-                        <li class="item"><img src="./images/img3.jpg" alt="Планшет" width="370" height="294"></li>
+                        <li class="item">
+                            <img src="./images/img.jpg" alt="Компьютер" width="370" height="294">
+                            <div class="work-title">
+                                <h3 class="title">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <img src="./images/img2.jpg" alt="Телефон" width="370" height="294">
+                            <div class="work-title">
+                                <h3 class="title">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <img src="./images/img3.jpg" alt="Планшет" width="370" height="294">
+                            <div class="work-title">
+                                <h3 class="title">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -409,11 +424,11 @@
 
         </footer>
 
-        <div class="backdrop is-hidden">
+        <div data-modal class="backdrop is-hidden">
             <div class="modal">
-                <button class="close-btn">
-                    <svg class="close-icon" width="" height="">
-                        <use href="./images/icons.svg#modal-close-btn"></use>
+                <button data-modal-close class="close-btn">
+                    <svg class="close-icon" width="11" height="11">
+                        <use href="./images/icons.svg#close"></use>
                     </svg>
                 </button>
             </div>
